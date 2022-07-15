@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Segoe UI;
+}
+
+.line {
+  @apply block w-[20px] h-[2px] my-1.5
+}
+
+.button-about {
+  @apply text-base font-semibold bg-blue-500 text-white py-3 px-2 rounded-full w-40 block mt-10 text-center hover:shadow-lg transition duration-300 ease-in-out opacity-90
+}
+
+.active > span:nth-child(1) {
+  background-color: aqua;
+  @apply rotate-45
+}
+
+.active > span:nth-child(2) {
+  @apply scale-0
+}
+
+.active > span:nth-child(3) {
+  background-color: aqua;
+  @apply -rotate-45
+}
