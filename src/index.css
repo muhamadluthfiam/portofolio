@@ -27,3 +27,7 @@ body {
   background-color: aqua;
   @apply -rotate-45
 }
+
+.button-login {
+  @apply text-xl w-20 h-10 rounded-lg hover:shadow-xl hover:bg-slate-50 text-black
+}
