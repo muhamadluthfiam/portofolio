@@ -19,10 +19,29 @@
             <svg viewBox="0 0 36 36" fill="none" role="img" xmlns="http://www.w3.org/2000/svg" width="80" height="80"><title>Irene Morgan</title><mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" fill="#FFFFFF" rx="72"></rect></mask><g mask="url(#mask__beam)"><rect width="36" height="36" fill="#ffb008"></rect><rect x="0" y="0" width="36" height="36" transform="translate(-3 -3) rotate(87 18 18) scale(1)" fill="#73b06f" rx="36"></rect><g transform="translate(-7 -4) rotate(7 18 18)"><path d="M15 19c2 1 4 1 6 0" stroke="#000000" fill="none" stroke-linecap="round"></path><rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect><rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect></g></g></svg>
           </div>
         </div>
+        <button @click="addLike">click me</button>
+        <p>total likes: {{ likes }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { useStore } from 'vuex'
+import { computed } from 'vue'
+export default {
+  setup () {
+  const store = useStore();
+
+  const addLike = () => {
+    store.commit('increment');
+  };
+
+  const likes = computed(() => {
+    return store.state.totalLikes;
+  });
+
+  return { addLike, likes };
+  }
+}
 </script>
