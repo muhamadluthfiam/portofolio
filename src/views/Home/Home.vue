@@ -1,14 +1,14 @@
 <template>
-  <div class="lg:pt-52 mt-24">
+  <div class="mt-[80px]">
     <div class="container">
       <div class="flex flex-wrap">
         <div class="w-full self-center px-20 lg:w-1/2">
           <h1 class="text-6xl font-bold">Luthfi amrullah</h1>
-          <h2 class="text-slate-400 text-2xl">Web Developer artisan | Design | ERP</h2>
-          <p>Titik koma adalah perusahaan start-up yang bergerak dibidang jasa pembuatan website</p>
-          <router-link to="/about" class="button-about">
+          <h2 class="text-slate-400 text-2xl">Web Developer artisan | Design</h2>
+          <p>Saya adalah manusia biasa yang suka</p>
+          <!-- <router-link to="/about" class="button-about">
             Tentang saya
-          </router-link>
+          </router-link> -->
           
         </div>
         <div class="w-full self-end px-12 lg:w-1/2">
@@ -19,8 +19,6 @@
             <svg viewBox="0 0 36 36" fill="none" role="img" xmlns="http://www.w3.org/2000/svg" width="80" height="80"><title>Irene Morgan</title><mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" fill="#FFFFFF" rx="72"></rect></mask><g mask="url(#mask__beam)"><rect width="36" height="36" fill="#ffb008"></rect><rect x="0" y="0" width="36" height="36" transform="translate(-3 -3) rotate(87 18 18) scale(1)" fill="#73b06f" rx="36"></rect><g transform="translate(-7 -4) rotate(7 18 18)"><path d="M15 19c2 1 4 1 6 0" stroke="#000000" fill="none" stroke-linecap="round"></path><rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect><rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect></g></g></svg>
           </div>
         </div>
-        <button @click="addLike">click me</button>
-        <p>total likes: {{ likes }}</p>
       </div>
     </div>
   </div>

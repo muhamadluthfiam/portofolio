@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-slate-900 px-20 pt-24 pb-12 text-white">
+  <footer class="bg-slate-900 px-20 pt-24 pb-12 text-white sticky-bottom-0">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-12 md:w-1/3">
@@ -24,7 +24,7 @@
             <p>Bandung</p>
           </div>
         </div>
-        <div class="w-full pt-10 border-t border-white">
+        <div class="m-auto pt-10 border-t border-white">
           <p class="font-medium text-sm text-center">Dibuat dengan <span class="text-red-500">♥</span> oleh luthfi amrullah</p>
         </div>
       </div>
